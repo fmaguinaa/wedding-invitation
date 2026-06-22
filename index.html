@@ -32,6 +32,8 @@
 
     html {
       scroll-behavior: smooth;
+      scroll-snap-type: y mandatory;
+      scroll-padding-top: 3rem;
     }
 
     body {
@@ -39,6 +41,7 @@
       background: var(--cream);
       color: var(--dark);
       overflow-x: hidden;
+      margin: 0;
     }
 
     /* ========== LOADER ========== */
@@ -133,6 +136,8 @@
       padding: 4rem 1.5rem;
       position: relative;
       overflow: hidden;
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
     }
 
     .reveal {
@@ -529,7 +534,7 @@
     #confirm {
       background: linear-gradient(135deg, #1a1412 0%, #2c2420 100%);
       text-align: center;
-      min-height: 70vh;
+      min-height: 100vh;
     }
     #confirm .section-title { color: var(--gold); }
     #confirm .section-tag { color: var(--gold-light); }
@@ -577,6 +582,8 @@
       text-align: center;
       padding: 3rem 1.5rem;
       border-top: 1px solid rgba(201,169,110,0.15);
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
     }
     footer p {
       font-family: var(--font-script);
