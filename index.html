@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Franz & Mariana - Nuestra Boda</title>
+  <title>Mariana & Franz - Nuestra Boda</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -16,13 +16,15 @@
     }
 
     :root {
-      --gold: #c9a96e;
-      --gold-light: #e8d5a3;
-      --cream: #faf6f0;
-      --dark: #2c2420;
-      --blush: #f2e3db;
-      --warm: #8b6f5e;
+      --gold-dark: #c9a96e;
+      --gold: #fff3db;
+      --gold-light: #fff8e5;
+      --cream: #f5ede4;
+      --dark: #2c2018;
+      --blush: #ebd5c5;
+      --warm: #c4a882;
       --white: #ffffff;
+      --white-light: #fdf7f0;
       --font-serif: 'Playfair Display', serif;
       --font-script: 'Great Vibes', cursive;
       --font-sans: 'Raleway', sans-serif;
@@ -206,7 +208,7 @@
     .hero-overlay {
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse at center, transparent 0%, rgba(26,20,18,0.6) 100%);
+      background: radial-gradient(ellipse at center, transparent 0%, rgba(44,32,24,0.6) 100%);
       pointer-events: none;
     }
 
@@ -258,7 +260,6 @@
       font-weight: 300;
       animation: fadeDown 1.2s ease 1.3s both;
     }
-    .hero-date i { margin-right: 0.5rem; }
 
     .hero-scroll {
       position: absolute;
@@ -313,7 +314,7 @@
     .divider {
       width: 60px;
       height: 2px;
-      background: var(--gold);
+      background: var(--gold-dark);
       margin: 1.5rem auto;
     }
 
@@ -327,7 +328,7 @@
     .intro-text .highlight {
       font-family: var(--font-script);
       font-size: 1.8rem;
-      color: var(--gold);
+      color: var(--gold-dark);
       display: block;
     }
 
@@ -378,7 +379,7 @@
 
     /* ========== CEREMONY ========== */
     #ceremony {
-      background: linear-gradient(135deg, #faf6f0 0%, #f2e3db 100%);
+      background: linear-gradient(135deg, #f5ede4 0%, #ebd5c5 100%);
     }
 
     .event-card {
@@ -399,11 +400,11 @@
       left: 0;
       right: 0;
       height: 4px;
-      background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold));
+      background: linear-gradient(90deg, var(--gold-dark), var(--gold), var(--gold-dark));
     }
     .event-icon {
       font-size: 2.5rem;
-      color: var(--gold);
+      color: var(--gold-dark);
       margin-bottom: 1rem;
     }
     .event-card h3 {
@@ -416,7 +417,7 @@
       font-size: 0.7rem;
       letter-spacing: 2px;
       text-transform: uppercase;
-      color: var(--gold);
+      color: var(--gold-dark);
       font-weight: 600;
       margin-bottom: 1rem;
     }
@@ -430,7 +431,7 @@
       display: inline-block;
       margin-top: 1.2rem;
       padding: 0.7rem 1.8rem;
-      border: 1.5px solid var(--gold);
+      border: 1.5px solid var(--gold-dark);
       color: var(--dark);
       text-decoration: none;
       font-size: 0.8rem;
@@ -441,7 +442,7 @@
       transition: all 0.3s;
     }
     .event-card .btn-maps:hover {
-      background: var(--gold);
+      background: var(--gold-dark);
       color: var(--white);
     }
 
@@ -557,7 +558,6 @@
       transition: all 0.3s ease;
       box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
     }
-    .btn-whatsapp i { font-size: 1.3rem; }
     .btn-whatsapp:hover {
       transform: translateY(-3px);
       box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
@@ -626,7 +626,7 @@
   <!-- LOADER -->
   <div class="loader" id="loader">
     <div class="loader-ring"></div>
-    <p>Franz & Mariana</p>
+    <p>Mariana & Franz</p>
   </div>
 
   <!-- NAV -->
@@ -646,19 +646,19 @@
     <div class="hero-overlay"></div>
 
     <div class="hero-content">
-      <div class="hero-floral">&#10086;</div>
+      <div class="hero-floral">💍</div>
       <p class="hero-sub">Nos casamos</p>
       <h1 class="hero-names">
-        Franz & Mariana
+        Mariana
         <span class="ampersand">&</span>
-        Maguiña Aranda & Velita Huaringa
+        Franz 
       </h1>
-      <p class="hero-date"><i class="far fa-calendar-alt"></i> 03 · 07 · 2026</p>
+      <p class="hero-date">📅 03 · 07 · 2026</p>
     </div>
 
     <div class="hero-scroll">
       <span>Descubre más</span>
-      <i class="fas fa-chevron-down"></i>
+      ▼
     </div>
   </section>
 
@@ -710,22 +710,19 @@
     </div>
     <div class="events-container">
       <div class="event-card reveal-left">
-        <div class="event-icon"><i class="fas fa-church"></i></div>
-        <h3>Registro Civil</h3>
+        <div class="event-icon">⛪</div>
+        <h3>Registro Civil de Lima Metropolitana</h3>
         <p class="event-label">Ceremonia</p>
-        <p>
-          Municipalidad de Lima<br>
-          <strong>Jesús María, Lima - Perú</strong>
-        </p>
-        <a class="btn-maps" href="https://maps.google.com/?q=Municipalidad+de+Lima+Jesus+Maria+Registro+Civil" target="_blank" rel="noopener">
-          <i class="fas fa-map-marker-alt"></i> Ver en Maps
+        <a class="btn-maps" href="https://maps.app.goo.gl/6984PuxyNvNE5T2q9" target="_blank" rel="noopener">
+          📍 Ver en Maps
         </a>
       </div>
       <div class="event-card reveal-right">
-        <div class="event-icon"><i class="far fa-clock"></i></div>
+        <div class="event-icon">⏰</div>
         <h3>Hora de la Ceremonia</h3>
-        <p class="event-label">A confirmar</p>
+        <p class="event-label">03 · 07 · 2026</p>
         <p>
+          <strong>3:00 PM</strong><br>
           Los esperamos puntuales para este momento tan importante.<br>
           <em>«Donde hay amor, hay vida»</em>
         </p>
@@ -742,19 +739,19 @@
     </div>
     <div class="reception-card reveal-scale">
       <div class="event-card">
-        <div class="event-icon"><i class="fas fa-home"></i></div>
+        <div class="event-icon">🏠</div>
         <h3>Casa de la Novia</h3>
         <p class="event-label">Recepción</p>
         <p>
-          Calle Los Robles 411<br>
+          Calle Los Robles 420 - Canto Grande<br>
           <strong>San Juan de Lurigancho, Lima - Perú</strong>
         </p>
         <p style="margin-top:0.8rem;font-size:0.85rem;font-style:italic;">
           Después de la ceremonia los esperamos para compartir
           una tarde de alegría, baile y buenos momentos.
         </p>
-        <a class="btn-maps" href="https://maps.google.com/?q=Calle+Los+Robles+411+San+Juan+de+Lurigancho+Lima" target="_blank" rel="noopener">
-          <i class="fas fa-map-marker-alt"></i> Ver en Maps
+        <a class="btn-maps" href="https://maps.app.goo.gl/b7hZMoL6UiWWrEHM7" target="_blank" rel="noopener">
+          📍 Ver en Maps
         </a>
       </div>
     </div>
@@ -789,7 +786,7 @@
       </div>
     </div>
     <p class="timer-message reveal">
-      <i class="far fa-heart"></i> Cada segundo nos acerca más al día en que
+      ❤️ Cada segundo nos acerca más al día en que
       nuestros caminos serán uno solo para siempre.
     </p>
   </section>
@@ -816,7 +813,7 @@
 
   <!-- FOOTER -->
   <footer>
-    <p>Franz & Mariana</p>
+    <p>Mariana & Franz</p>
     <small>Gracias por ser parte de nuestra historia</small>
   </footer>
 
@@ -896,7 +893,7 @@
 
     // ========== TIMER ==========
     // EDIT: Cambia esta fecha a la de tu boda (Año, Mes-1, Día, Hora, Minuto)
-    const weddingDate = new Date('2026-07-03T18:00:00').getTime();
+    const weddingDate = new Date('2026-07-03T15:00:00').getTime();
 
     function updateTimer() {
       const now = new Date().getTime();
@@ -926,9 +923,9 @@
 
     // ========== WHATSAPP ==========
     // EDIT: Reemplaza 51999999999 con tu número (código de país + número, sin +)
-    const phoneNumber = '51999999999';
+    const phoneNumber = '51943433979';
     const message = encodeURIComponent(
-      '¡Hola Franz y Mariana! Confirmo mi asistencia a su boda civil. 🎉 Los esperamos con mucho cariño.'
+      '¡Hola Mariana y Franz! Confirmo mi asistencia a su boda civil. 🎉 Los esperamos con mucho cariño.'
     );
     document.getElementById('whatsappBtn').href =
       `https://wa.me/${phoneNumber}?text=${message}`;
