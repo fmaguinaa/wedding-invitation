@@ -522,14 +522,6 @@
     #reception {
       background: var(--white);
     }
-    .reception-card {
-      text-align: center;
-      max-width: 550px;
-      width: 100%;
-    }
-    .reception-card .event-card {
-      margin-top: 1.5rem;
-    }
 
     /* ========== CONFIRMATION / WHATSAPP ========== */
     #confirm {
@@ -751,8 +743,8 @@
       <div class="divider"></div>
       <h2 class="section-title">Recepción</h2>
     </div>
-    <div class="reception-card reveal-scale">
-      <div class="event-card">
+    <div class="events-container">
+      <div class="event-card reveal-left">
         <div class="event-icon">🏠</div>
         <h3>Casa de la Novia</h3>
         <p class="event-label">Recepción</p>
@@ -762,11 +754,24 @@
         </p>
         <p style="margin-top:0.8rem;font-size:0.85rem;font-style:italic;">
           Después de la ceremonia los esperamos para compartir
-          una tarde de alegría, baile y buenos momentos.
+          una tarde de alegría, comida, bebida y buenos momentos.
         </p>
         <a class="btn-maps" href="https://maps.app.goo.gl/b7hZMoL6UiWWrEHM7" target="_blank" rel="noopener">
           📍 Ver en Maps
         </a>
+      </div>
+      <div class="event-card reveal-right">
+        <div class="event-icon">🎉</div>
+        <h3>Hora de la Recepción</h3>
+        <p class="event-label">Te esperamos</p>
+        <p style="font-size:1.4rem;font-weight:600;color:var(--gold-dark);margin-bottom:1.5rem;">
+          5:00 PM
+        </p>
+        <p style="font-weight:300;color:#5a4a42;line-height:1.7;font-size:0.95rem;">
+          Después de la ceremonia,<br>
+          nos vemos en la recepción.<br>
+          <em>¡La fiesta comienza!</em>
+        </p>
       </div>
     </div>
   </section>
