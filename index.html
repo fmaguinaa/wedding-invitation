@@ -32,7 +32,7 @@
 
     html {
       scroll-behavior: smooth;
-      scroll-snap-type: y proximity;
+      scroll-snap-type: y mandatory;
       scroll-padding-top: 3rem;
     }
 
@@ -186,6 +186,7 @@
       justify-content: center;
       text-align: center;
       padding: 2rem;
+      scroll-snap-align: none;
     }
 
     .floating-particles {
@@ -281,6 +282,7 @@
       flex-direction: column;
       align-items: center;
       gap: 0.5rem;
+      cursor: pointer;
     }
     .hero-scroll i { font-size: 1rem; }
 
@@ -663,7 +665,7 @@
       <p class="hero-date">📅 03 · 07 · 2026</p>
     </div>
 
-    <div class="hero-scroll">
+    <div class="hero-scroll" onclick="document.getElementById('intro').scrollIntoView({behavior:'smooth'})">
       <span>Descubre más</span>
       ▼
     </div>
